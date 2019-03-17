@@ -15,8 +15,10 @@ Binaries can be found [here] (https://github.com/42wim/rl/releases/)
 
 ## Building
 Go 1.12+ is required. 
+
 ```
-`go get github.com/42wim/rl`
+go get github.com/42wim/rl
+```
 
 You should now have rl binary in the ~/go/bin directory:
 
@@ -26,18 +28,21 @@ rl
 ```
 
 # Usage
+
 ```
 Usage of ./rl:
+  -f string
+        define a file as input
   -k    keep the messages instead of dropping them
   -r int
         limit to r messages per second (drops those exceeding the limit) (default 5)
-
+```
 
 (the number of dropped messages will be sent to stderr, when not using the -k switch)
-```
 
 
 # Example
+
 ```
 journalctl -f | rl -k -r 5
 ```
