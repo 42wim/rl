@@ -14,18 +14,14 @@ E.g. when using [mattertee](https://github.com/42wim/matterstuff/tree/master/mat
 Binaries can be found [here] (https://github.com/42wim/rl/releases/)
 
 ## Building
-Go 1.6+ is required. Make sure you have [Go](https://golang.org/doc/install) properly installed, including setting up your [GOPATH] (https://golang.org/doc/code.html#GOPATH
-)
+Go 1.12+ is required. 
+```
+`go get github.com/42wim/rl`
+
+You should now have rl binary in the ~/go/bin directory:
 
 ```
-cd $GOPATH
-go get github.com/42wim/rl
-```
-
-You should now have rl binary in the bin directory:
-
-```
-$ ls bin/
+$ ls ~/go/bin/
 rl
 ```
 
